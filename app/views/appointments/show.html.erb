@@ -5,6 +5,16 @@
   <%= @appointment.appointment_date %>
 </p>
 
+<p>
+  <b>Doctor of the Patient<b>
+    <%= @appointment.doctor.name %>
+</p>
+
+<p>
+  <b>Patient Name</b>
+  <%= @appointment.patient.name %>
+</p>
+
 
 <%= link_to 'Edit', edit_appointment_path(@appointment) %> |
 <%= link_to 'Back', appointments_path %>
